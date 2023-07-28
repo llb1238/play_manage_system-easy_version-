@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+input.error { border: 2px solid red; }
+label.error {
+	width: 300px;
+	color: #036;
+	background-image: url('icons/unchecked.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 15px;
+	margin-left: 5px;
+}
+label.valid {
+	background: url('icons/tick.png') no-repeat;
+	width: 300px;
+	height: 16px;
+}
