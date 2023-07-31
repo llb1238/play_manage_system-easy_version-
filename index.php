@@ -20,6 +20,8 @@ include("php/common.php");
         <button onclick="window.location.href='add_em.php'" type="button" class="btn">add employee</button>
         
         <button onclick="window.location.href='view_em.php'" type="button" class="btn">view employees</button>
+
+        <button onclick="window.location.href='view_com.php'" type="button" class="btn">view companies</button>
     </form>
 </body>
 </html>
