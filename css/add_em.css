@@ -18,7 +18,7 @@ body{
     /* absolute居中的一种方法 */
     background-color: whitesmoke;
     width: 400px;
-    height: 400px;
+    height: 460px;
     border-radius: 25px;
     text-align: center;
     padding: 5px 40px;
@@ -59,7 +59,3 @@ input{
 
 .error {color: #FF0000;}
 
-.btn-space {
-    margin-right: 20px;  
-    display: inline-block;  
-}

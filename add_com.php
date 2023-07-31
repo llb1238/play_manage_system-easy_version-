@@ -74,7 +74,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p>add company</p>
         <input type="text" name="c_name" placeholder="company name">
         <input type="tel" name="c_tel" placeholder="commpany tel">
-        <input type="submit" class="btn" value="submit">
+
+        <input type="button" class="btn btn-space" value="back" onclick="location.href='index.php';">
+        <input type="submit" class="btn btn-space" value="submit">
         <br>
         <span class="error"> <?php echo $sccessful;?></span>
         <span class="error"> <?php echo $nameErr;?></span>
