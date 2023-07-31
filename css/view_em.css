@@ -17,8 +17,8 @@ body{
     margin-left: -200px;
     /* absolute居中的一种方法 */
     background-color: whitesmoke;
-    width: 400px;
-    height: 460px;
+    width: 550px;
+    height: 500px;
     border-radius: 25px;
     text-align: center;
     padding: 5px 40px;
@@ -63,4 +63,36 @@ input{
     margin-right: 20px;  
     display: inline-block;  
 }
+
+table {
+    width: 480px;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    
+}
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.table-container {
+    width: 100%; /* Or whatever width you want. */
+    max-height: 250px; /* Or whatever height you want. */
+    overflow: auto;
+}
+
 

@@ -16,8 +16,10 @@ include("php/common.php");
     <form action="" class="login">
         <p>Manage System</p>
         <button onclick="window.location.href='add_com.php'" type="button" class="btn">add company</button>
-        <br>
+        
         <button onclick="window.location.href='add_em.php'" type="button" class="btn">add employee</button>
+        
+        <button onclick="window.location.href='view_em.php'" type="button" class="btn">view employees</button>
     </form>
 </body>
 </html>

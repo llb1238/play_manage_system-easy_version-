@@ -72,9 +72,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -95,8 +92,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="radio" name="e_job" value="dancer" style="width: 20px; height: 20px;"><label style="font-size: 20px;">dancer</label>
         <input type="radio" name="e_job" value="actor" style="width: 20px; height: 20px;"><label style="font-size: 20px;">actor</label>
         <br>
-
-        <input type="submit" class="btn" value="submit">
+        <input type="button" class="btn btn-space" value="back" onclick="location.href='index.php';">
+        <input type="submit" class="btn btn-space" value="submit">
         <br>
         <span class="error"> <?php echo $sccessful;?></span>
         <span class="error"> <?php echo $nameErr;?></span>

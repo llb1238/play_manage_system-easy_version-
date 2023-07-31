@@ -64,6 +64,7 @@ button{
     font-size: 17px;
     font-weight: 600;
     color: white;
+    margin: 10px 0;
 }
 .btn:hover{
     background-color: #59c2a0;
