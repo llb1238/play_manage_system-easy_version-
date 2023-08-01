@@ -44,9 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body><form action="" class="login" method="post">
     <p>Login</p>
-    <input type="text" placeholder="用户名" name="username" value="">
-    <input type="password" placeholder="密码" name="password" value="">
-    <input type="submit" class="btn" value="登  录">
+    <input type="text" placeholder="username" name="username" value="">
+    <input type="password" placeholder="password" name="password" value="">
+    <input type="submit" class="btn" value="login">
     <span class="error"> <?php echo $Err;?></span>
 </form>
     
