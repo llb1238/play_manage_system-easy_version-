@@ -17,8 +17,8 @@ body{
     margin-left: -200px;
     /* absolute居中的一种方法 */
     background-color: whitesmoke;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 25px;
     text-align: center;
     padding: 5px 40px;
@@ -27,7 +27,7 @@ body{
 }
 
 p{
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 600;
 }
 
@@ -63,3 +63,59 @@ input{
     margin-right: 20px;  
     display: inline-block;  
 }
+
+#deleteInputs{
+    display: none;
+}
+
+#changeInputs{
+    display: none;
+}
+
+select {
+    width: 50%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+    text-align-last:center;
+    -moz-text-align-last:center; 
+}
+  
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+  
+select::-ms-expand {
+    display: none;
+}
+  
+select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #ddd;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+  
+select:hover::after {
+    background: #ccc;
+}
+
+.sp{
+    font-size:20px;
+}
+  
