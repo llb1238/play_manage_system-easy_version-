@@ -4,7 +4,7 @@ include("php/common.php");
 
 $Err="";
 $password = $user = "";
-$sccessful = "";
+
 $flag = 1;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -12,26 +12,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $user = $_POST['username'];
     $password = $_POST['password'];  
     
-    $sql = "select * from user_pass where username = (?) and password = (?)";
-    $mysql_stmt = $conn->prepare($sql);
+    $sql = "select * from user_pass where username = '$user' and password = '$password'";
+    // $mysql_stmt = $conn->prepare($sql);
     
-    $mysql_stmt->bind_param('ss',$user,$password);
+    // $mysql_stmt->bind_param('ss',$user,$password);
     
-    $result = $mysql_stmt->exectu();
+    $result = $conn->query($sql);
     if($result -> num_rows >0){
         header("Location: choice.php");
     }
     else{
         $Err="<br>username or password is not correct";
+        $user="";
+        $password="";
     }
-
-    
-  
   
 }
 
 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,8 +44,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body><form action="" class="login" method="post">
     <p>Login</p>
-    <input type="text" placeholder="用户名" name="username">
-    <input type="password" placeholder="密码" name="password">
+    <input type="text" placeholder="用户名" name="username" value="">
+    <input type="password" placeholder="密码" name="password" value="">
     <input type="submit" class="btn" value="登  录">
     <span class="error"> <?php echo $Err;?></span>
 </form>

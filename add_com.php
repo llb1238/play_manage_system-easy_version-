@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="text" name="c_name" placeholder="company name">
         <input type="tel" name="c_tel" placeholder="commpany tel">
 
-        <input type="button" class="btn btn-space" value="back" onclick="location.href='index.php';">
+        <input type="button" class="btn btn-space" value="back" onclick="location.href='choice.php';">
         <input type="submit" class="btn btn-space" value="submit">
         <br>
         <span class="error"> <?php echo $sccessful;?></span>

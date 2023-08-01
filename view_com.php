@@ -52,7 +52,7 @@ $result = $conn->query($sql);
             ?>
         </table>
         </div>
-        <input type="button" class="btn btn-space" value="back" onclick="location.href='index.php';">
+        <input type="button" class="btn btn-space" value="back" onclick="location.href='choice.php';">
     </form>
 </body>
 </html>
