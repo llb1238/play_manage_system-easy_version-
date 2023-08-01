@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主机： 127.0.0.1
--- 生成日期： 2023-07-28 22:43:37
+-- 生成日期： 2023-08-01 15:28:45
 -- 服务器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -35,6 +35,19 @@ CREATE TABLE `employee` (
   `telephone` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- 转存表中的数据 `employee`
+--
+
+INSERT INTO `employee` (`e_id`, `name`, `address`, `job_type`, `telephone`) VALUES
+(1, 'llb', 'dddd', 'actor', 134232323),
+(2, 'sss', 'sss', 'dancer', 123123214),
+(3, '2222', '222', 'actor', 123132),
+(4, '123142', '123124', 'dancer', 123124),
+(5, '232323', '242424', 'actor', 24242),
+(6, '343434', '343434', 'actor', 21233),
+(7, '232114', '32323', 'actor', 121323);
+
 -- --------------------------------------------------------
 
 --
@@ -42,7 +55,7 @@ CREATE TABLE `employee` (
 --
 
 CREATE TABLE `production_company` (
-  `c-id` int(6) NOT NULL,
+  `c_id` int(6) NOT NULL,
   `c_name` varchar(50) NOT NULL,
   `c_telephone` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -51,7 +64,7 @@ CREATE TABLE `production_company` (
 -- 转存表中的数据 `production_company`
 --
 
-INSERT INTO `production_company` (`c-id`, `c_name`, `c_telephone`) VALUES
+INSERT INTO `production_company` (`c_id`, `c_name`, `c_telephone`) VALUES
 (1, '', 111),
 (2, '', 1),
 (3, '', 222),
@@ -66,6 +79,17 @@ INSERT INTO `production_company` (`c-id`, `c_name`, `c_telephone`) VALUES
 (12, 'sdsd', 12324),
 (13, 'sdsd', 12324),
 (14, '2222', 232312);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `user_pass`
+--
+
+CREATE TABLE `user_pass` (
+  `username` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -95,7 +119,7 @@ ALTER TABLE `employee`
 -- 表的索引 `production_company`
 --
 ALTER TABLE `production_company`
-  ADD PRIMARY KEY (`c-id`);
+  ADD PRIMARY KEY (`c_id`);
 
 --
 -- 表的索引 `work_detail`
@@ -111,13 +135,13 @@ ALTER TABLE `work_detail`
 -- 使用表AUTO_INCREMENT `employee`
 --
 ALTER TABLE `employee`
-  MODIFY `e_id` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `e_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- 使用表AUTO_INCREMENT `production_company`
 --
 ALTER TABLE `production_company`
-  MODIFY `c-id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `c_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- 使用表AUTO_INCREMENT `work_detail`
