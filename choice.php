@@ -15,9 +15,9 @@ include("php/common.php");
 <body>
     <form action="" class="login">
         <p>Manage System</p>
-        <button onclick="window.location.href='add_com.php'" type="button" class="btn">add company</button>
+        <button onclick="window.location.href='update_com.php'" type="button" class="btn">add company</button>
         
-        <button onclick="window.location.href='add_em.php'" type="button" class="btn">add employee</button>
+        <button onclick="window.location.href='update_em.php'" type="button" class="btn">add employee</button>
         
         <button onclick="window.location.href='view_em.php'" type="button" class="btn">view employees</button>
 
